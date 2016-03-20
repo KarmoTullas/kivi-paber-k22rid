@@ -40,3 +40,4 @@ while True:
 
                 pygame.display.flip()
                 
+tarvo on pede
