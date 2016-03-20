@@ -2,7 +2,7 @@
 #Kivi-paber-käärid
 #Koostasid Tarmo Kullas & Tarvo Mäesepp
 
-import pygame, random, sys
+import pygame, random, sys, time
 
 #Ekraan
 pygame.init()
@@ -39,4 +39,19 @@ while True:
                 ekraan.blit(käärid, (70, 313.6))
 
                 pygame.display.flip()
-                
+
+                i = "õige"
+                while i == "õige":
+                    pygame.draw.rect(ekraan, [246, 231, 195], [442, 166.4, 128, 128], 0)
+                    ekraan.blit(kivi, (442, 166.4))
+                    pygame.display.flip()
+                    time.sleep(0.1)
+                    pygame.draw.rect(ekraan, [246, 231, 195], [442, 166.4, 128, 128], 0)
+                    ekraan.blit(paber, (442, 166.4))
+                    pygame.display.flip()
+                    time.sleep(0.1)
+                    pygame.draw.rect(ekraan, [246, 231, 195], [442, 166.4, 128, 128], 0)
+                    ekraan.blit(käärid, (442, 166.4))
+                    pygame.display.flip()
+                    time.sleep(0.1)
+               
