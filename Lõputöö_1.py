@@ -1,0 +1,42 @@
+#Arvutimängud lõputöö
+#Kivi-paber-käärid
+#Koostasid Tarmo Kullas & Tarvo Mäesepp
+
+import pygame, random, sys
+
+#Ekraan
+pygame.init()
+ekraan = pygame.display.set_mode([640, 480])
+ekraan.fill([246, 231, 195])
+
+#Esileht
+header = pygame.image.load("header.jpg") #493x71 px
+ekraan.blit(header, (73.5, 60))
+
+alusta = pygame.image.load("alusta.jpg") #260x61 px
+ekraan.blit(alusta, (190, 260))
+
+pygame.display.flip()
+            
+while True:
+    for i in pygame.event.get():
+        if i.type == pygame.QUIT:
+            sys.exit()
+        elif i.type == pygame.MOUSEBUTTONDOWN and i.button == 1:
+            mx, my = pygame.mouse.get_pos()
+            if mx > 190 and mx < 450 and my > 260 and my < 321:
+
+                #Kui on vajutatud nuppu alusta
+                ekraan.fill([246, 231, 195])
+
+                #Elemendid
+                kivi = pygame.image.load("kivi.jpg") #128x128px
+                paber = pygame.image.load("paber.jpg") #128x128px
+                käärid = pygame.image.load("k22rid.jpg") #128x128px
+
+                ekraan.blit(kivi, (70, 19.2))
+                ekraan.blit(paber, (70, 166.4))
+                ekraan.blit(käärid, (70, 313.6))
+
+                pygame.display.flip()
+                
