@@ -54,4 +54,6 @@ while True:
                     ekraan.blit(käärid, (442, 166.4))
                     pygame.display.flip()
                     time.sleep(0.1)
+
+Tarvo on pede
                
