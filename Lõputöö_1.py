@@ -10,10 +10,10 @@ ekraan = pygame.display.set_mode([640, 480])
 ekraan.fill([246, 231, 195])
 
 #Esileht
-header = pygame.image.load("header.jpg") #493x71 px
+header = pygame.image.load("header.png") #493x71 px
 ekraan.blit(header, (73.5, 60))
 
-alusta = pygame.image.load("alusta.jpg") #260x61 px
+alusta = pygame.image.load("alusta.png") #260x61 px
 ekraan.blit(alusta, (190, 260))
 
 pygame.display.flip()
@@ -30,9 +30,9 @@ while True:
                 ekraan.fill([246, 231, 195])
 
                 #Elemendid
-                kivi = pygame.image.load("kivi.jpg") #128x128px
-                paber = pygame.image.load("paber.jpg") #128x128px
-                käärid = pygame.image.load("k22rid.jpg") #128x128px
+                kivi = pygame.image.load("kivi.png") #128x128px
+                paber = pygame.image.load("paber.png") #128x128px
+                käärid = pygame.image.load("k22rid.png") #128x128px
 
                 ekraan.blit(kivi, (70, 19.2))
                 ekraan.blit(paber, (70, 166.4))
