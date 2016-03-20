@@ -55,5 +55,5 @@ while True:
                     pygame.display.flip()
                     time.sleep(0.1)
 
-Tarvo on pede
+Tarvo on pedeeee
                
